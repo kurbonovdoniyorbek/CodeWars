@@ -2,7 +2,7 @@ function cakes(r, a) {
     let c = 0
     while (true) {
         for (let i in r) {
-            if (!a) {
+            if (!a[i]) {
                 return c
             }
             if (a[i] - r[i] < 0) {
@@ -15,8 +15,3 @@ function cakes(r, a) {
         c++
     }
 }
-
-
-console.log(
-    cakes({ flour: 500, sugar: 200, eggs: 1 }, { flour: 1200, sugar: 1200, eggs: 5, milk: 200 })
-);  // must return
