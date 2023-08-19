@@ -1,0 +1,1 @@
+splitAndMerge = (str, sp) => str.split(' ').map((element) => element.split('').join(sp)).join(' ')

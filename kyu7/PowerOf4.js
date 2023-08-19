@@ -1,0 +1,1 @@
+const powerOf4 = n => typeof n === "number" && Math.log2(n) % 2 === 0;
